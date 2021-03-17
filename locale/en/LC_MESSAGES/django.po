@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-23 11:50+0200\n"
+"POT-Creation-Date: 2021-03-04 09:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -325,7 +325,7 @@ msgid "Published"
 msgstr ""
 
 #: .\project\partners\templates\partners\index.html:3
-#: .\project\templates\layouts\partials\nav.html:79
+#: .\project\templates\layouts\partials\nav.html:81
 msgid "Partners"
 msgstr ""
 
@@ -421,13 +421,19 @@ msgstr "Meet the performers of the TEDxNTUA 2021 event!"
 msgid "side_events.description"
 msgstr "Learn more about the side events of the TEDxNTUA 2021 event!"
 
+#: .\project\program\templates\program\old_presenter.html:9
 #: .\project\program\templates\program\presenter.html:9
 msgid "back"
 msgstr "Back"
 
-#: .\project\program\templates\program\presenter.html:36
+#: .\project\program\templates\program\old_presenter.html:36
+#: .\project\program\templates\program\presenter.html:53
 msgid "presenter.read_full"
-msgstr "Read full description"
+msgstr "Read more"
+
+#: .\project\program\templates\program\presenter.html:54
+msgid "presenter.read_less"
+msgstr "Read less"
 
 #: .\project\program\templates\program\schedule.html:4
 msgid "schedule.title"
@@ -444,64 +450,57 @@ msgstr ""
 msgid "TIME"
 msgstr ""
 
-#: .\project\settings\base.py:179
+#: .\project\settings\base.py:180
 msgid "Greek"
 msgstr ""
 
-#: .\project\settings\base.py:180
+#: .\project\settings\base.py:181
 msgid "English"
 msgstr ""
 
-#: .\project\templates\layouts\partials\footer.html:9
-msgid "Find us"
-msgstr ""
-
-#: .\project\templates\layouts\partials\footer.html:52
-msgid "More stuff from us"
-msgstr ""
-
-#: .\project\templates\layouts\partials\footer.html:115
+#: .\project\templates\layouts\partials\footer.html:94
 msgid "Privacy Policy"
 msgstr ""
 
-#: .\project\templates\layouts\partials\footer.html:118
+#: .\project\templates\layouts\partials\footer.html:97
 msgid "Terms of Use"
 msgstr ""
 
-#: .\project\templates\layouts\partials\footer.html:122
+#: .\project\templates\layouts\partials\footer.html:101
 msgid "This independent TEDx event is operated under license from TED."
 msgstr ""
 
-#: .\project\templates\layouts\partials\nav.html:20
-msgid "MENU"
-msgstr ""
-
-#: .\project\templates\layouts\partials\nav.html:21
-msgid "CLOSE"
-msgstr ""
-
-#: .\project\templates\layouts\partials\nav.html:31
+#: .\project\templates\layouts\partials\nav.html:23
 msgid "Home"
 msgstr ""
 
+#: .\project\templates\layouts\partials\nav.html:36
 #: .\project\templates\layouts\partials\nav.html:42
 msgid "The event"
 msgstr ""
 
-#: .\project\templates\layouts\partials\nav.html:42
+#: .\project\templates\layouts\partials\nav.html:36
 msgid "(Toggle dropdown)"
 msgstr ""
 
-#: .\project\templates\layouts\partials\nav.html:87
+#: .\project\templates\layouts\partials\nav.html:91
 msgid "About us"
 msgstr ""
 
-#: .\project\templates\layouts\partials\nav.html:95
+#: .\project\templates\layouts\partials\nav.html:101
 msgid "Tickets"
 msgstr ""
 
-#: .\project\templates\layouts\partials\nav.html:100
+#: .\project\templates\layouts\partials\nav.html:106
 msgid "LANGUAGE"
+msgstr ""
+
+#: .\project\templates\layouts\partials\nav.html:133
+msgid "MENU"
+msgstr ""
+
+#: .\project\templates\layouts\partials\nav.html:134
+msgid "CLOSE"
 msgstr ""
 
 #: .\project\urls.py:37

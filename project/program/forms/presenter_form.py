@@ -33,6 +33,7 @@ class PresenterModelForm(TranslatableModelForm):
             'short_bio',
             'quote',
             'image',
+            'image_alt',
             'link',
             'create_empty_activity',
             'is_published',

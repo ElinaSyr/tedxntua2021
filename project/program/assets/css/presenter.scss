@@ -1,19 +1,82 @@
 article.presenter-page {
+        .presenter {
+            display: flex;
+            flex-direction: column;
+            margin-top: 1.5em;
+        }
+        img {
+            margin: 0;
+            width: 100%;
+            height: auto;
+            flex-shrink: 0;
+        }
+        .image-placeholder div {
+            width: 50vw;
+            height: 50vw;
+            margin: 0 auto;
+        }
+        .info{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            .name_link_oc{
+                display:flex;
+                flex-direction: column;
+                margin-left: 3.5%;
+                .name_link{
+                    display:flex; 
+                    flex-direction: row;
+                    flex-wrap:nowrap;
+                }
+            }
+            #description {
+                #collapse-one{
+                    height: 120px; 
+                    overflow-y: hidden;
+                    margin-right: 10%;
+                    &.show{
+                        height: max-content;
+                        transition: 0.5s;
+                    }
+                    &.collapse:not(.show) {
+                        display: flex;
+                    }
+                }
+            }
+            [data-toggle="collapse"].collapsed .if-not-collapsed {
+                display: none;
+              }
+            [data-toggle="collapse"]:not(.collapsed) .if-collapsed {
+                display: none;
+            }
+        }
+        .activities {
+            display: flex;
+            flex-direction: row;
+            margin-top: 3em;
+            margin-left: 3.5%;
+        }
+    }
+
+@include media-breakpoint-up(sm) {
+article.presenter-page {
     .presenter {
         display: flex;
         flex-direction: row;
         margin-top: 1.5em;
         //border: 1px solid rgb(248, 248, 248);
-        padding: 5px;
-        margin: 5px;
+        padding: 0.1em;
+        margin: 0em;
         img {
             width: 100%;
             height: auto;
             flex-shrink: 0;
-            padding: 25px;
+            padding: 1em;
             //border: 5px solid rgb(255, 255, 255);
             object-fit: cover;
-            padding-left: 0px; 
+            padding-left: 0em; 
+            min-width: 9em;
+            min-height: 14em;
         }
         .image-placeholder div {
             width: 30em;
@@ -23,7 +86,7 @@ article.presenter-page {
         }
         .info{
             display: flex;
-            align-content: center;
+            align-content: right;
             // width: 300px;
             flex-direction: row;
             .name_link_oc{
@@ -31,13 +94,14 @@ article.presenter-page {
                 flex-direction: column;
                 max-width: 100%;
                 padding: 2px;
+                margin-left: 1%;
+                margin-top:1em;
                 //border: 5px solid rgb(255, 255, 255);
                 .name_link{
                     display:flex;
                     flex-direction: row;
 
                 }
-
             }
             .content{
                 line-height: 1.75;
@@ -48,6 +112,7 @@ article.presenter-page {
         }
     }
     .activities{
+        margin-left: -1%;
         .activity{
             display: flex;
             flex-direction: column;
@@ -58,19 +123,18 @@ article.presenter-page {
             .name_title{
                 //border: 2px solid rgb(255, 255, 255);
                 padding: 5px;
-                margin: 10px;
             }
             .content{
                 display: flex; 
-                margin-right: 10em; 
-                margin-left: 0.5em;
-                padding: 5px;
+                margin-right: 10%; 
+                margin-left: 0.5%;
             }
+            
         }
-
     }
+
     h1 {
-        margin-bottom: 1rem;
+        margin-bottom: 0px;
         font-weight: bold;
         color: rgb(255, 255, 255);
     }
@@ -83,5 +147,6 @@ article.presenter-page {
         margin-bottom: .25rem;
         color: rgb(255, 255, 255);
     }
-        
+}
+
 }

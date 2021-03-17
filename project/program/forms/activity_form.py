@@ -26,6 +26,7 @@ class ActivityModelForm(TranslatableModelForm):
             'start',
             'end',
             'image',
+            'image_alt',
             'get_image_from_presenter',
             'presenter',
             'title',

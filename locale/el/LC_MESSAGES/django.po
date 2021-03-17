@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-23 11:50+0200\n"
+"POT-Creation-Date: 2021-03-04 09:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -337,7 +337,7 @@ msgid "Published"
 msgstr "Δημόσιο"
 
 #: .\project\partners\templates\partners\index.html:3
-#: .\project\templates\layouts\partials\nav.html:79
+#: .\project\templates\layouts\partials\nav.html:81
 msgid "Partners"
 msgstr "Συνεργάτες"
 
@@ -437,13 +437,19 @@ msgstr "Γνώρισε τους performers του φετινού TEDxNTUA 2020!"
 msgid "side_events.description"
 msgstr "Μάθε περισσότερα για τα side events του φετινού TEDxNTUA 2020!"
 
+#: .\project\program\templates\program\old_presenter.html:9
 #: .\project\program\templates\program\presenter.html:9
 msgid "back"
 msgstr "Πίσω"
 
-#: .\project\program\templates\program\presenter.html:36
+#: .\project\program\templates\program\old_presenter.html:36
+#: .\project\program\templates\program\presenter.html:53
 msgid "presenter.read_full"
-msgstr "Διάβασε την πλήρη περιγραφή"
+msgstr "Διάβασε περισσότερα"
+
+#: .\project\program\templates\program\presenter.html:54
+msgid "presenter.read_less"
+msgstr "Διάβασε λιγότερα"
 
 #: .\project\program\templates\program\schedule.html:4
 msgid "schedule.title"
@@ -460,66 +466,59 @@ msgstr ""
 msgid "TIME"
 msgstr "ΩΡΑ"
 
-#: .\project\settings\base.py:179
+#: .\project\settings\base.py:180
 msgid "Greek"
 msgstr "Ελληνικά"
 
-#: .\project\settings\base.py:180
+#: .\project\settings\base.py:181
 msgid "English"
 msgstr "Αγγλικά"
 
-#: .\project\templates\layouts\partials\footer.html:9
-msgid "Find us"
-msgstr "Βρείτε μας"
-
-#: .\project\templates\layouts\partials\footer.html:52
-msgid "More stuff from us"
-msgstr "Περισσότερα από εμάς"
-
-#: .\project\templates\layouts\partials\footer.html:115
+#: .\project\templates\layouts\partials\footer.html:94
 msgid "Privacy Policy"
 msgstr "Πολιτική Απορρήτου"
 
-#: .\project\templates\layouts\partials\footer.html:118
+#: .\project\templates\layouts\partials\footer.html:97
 msgid "Terms of Use"
 msgstr "Όροι Χρήσης"
 
-#: .\project\templates\layouts\partials\footer.html:122
+#: .\project\templates\layouts\partials\footer.html:101
 msgid "This independent TEDx event is operated under license from TED."
 msgstr ""
 "Αυτή η ανεξάρτητα οργανωμένη εκδήλωση TEDx λειτουργεί με άδεια από το TED."
 
-#: .\project\templates\layouts\partials\nav.html:20
-msgid "MENU"
-msgstr "ΜΕΝΟΥ"
-
-#: .\project\templates\layouts\partials\nav.html:21
-msgid "CLOSE"
-msgstr "ΚΛΕΙΣΕ"
-
-#: .\project\templates\layouts\partials\nav.html:31
+#: .\project\templates\layouts\partials\nav.html:23
 msgid "Home"
 msgstr "Αρχική"
 
+#: .\project\templates\layouts\partials\nav.html:36
 #: .\project\templates\layouts\partials\nav.html:42
 msgid "The event"
 msgstr "Η εκδήλωση"
 
-#: .\project\templates\layouts\partials\nav.html:42
+#: .\project\templates\layouts\partials\nav.html:36
 msgid "(Toggle dropdown)"
 msgstr "(Εμφάνιση/Απόκρυψη υπομενού)"
 
-#: .\project\templates\layouts\partials\nav.html:87
+#: .\project\templates\layouts\partials\nav.html:91
 msgid "About us"
 msgstr "Σχετικά"
 
-#: .\project\templates\layouts\partials\nav.html:95
+#: .\project\templates\layouts\partials\nav.html:101
 msgid "Tickets"
 msgstr "Εισιτήρια"
 
-#: .\project\templates\layouts\partials\nav.html:100
+#: .\project\templates\layouts\partials\nav.html:106
 msgid "LANGUAGE"
 msgstr "ΓΛΩΣΣΑ"
+
+#: .\project\templates\layouts\partials\nav.html:133
+msgid "MENU"
+msgstr "ΜΕΝΟΥ"
+
+#: .\project\templates\layouts\partials\nav.html:134
+msgid "CLOSE"
+msgstr "ΚΛΕΙΣΕ"
 
 #: .\project\urls.py:37
 msgid "TEDxNTUA 2021 administration"
@@ -1719,6 +1718,12 @@ msgstr ""
 #: .\venv\Lib\site-packages\versatileimagefield\templates\versatileimagefield\forms\widgets\versatile_image_bootstrap.html:17
 msgid "Primary Point of Interest"
 msgstr ""
+
+#~ msgid "Find us"
+#~ msgstr "Βρείτε μας"
+
+#~ msgid "More stuff from us"
+#~ msgstr "Περισσότερα από εμάς"
 
 #~ msgid "Picture #1 of"
 #~ msgstr "Φωτογραφία #1 του/της"

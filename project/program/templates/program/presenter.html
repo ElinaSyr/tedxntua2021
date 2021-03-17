@@ -44,15 +44,17 @@
                     </div>
                     <h3>{{presenter.occupation}}</h3>
                 </div>
-                <div class="text">
-                    <div class="collapse content" id="description">
+                <div id="description" class="container" >
+                    <p class= "" id="collapse-one" aria-expanded="false">
                         {{presenter.short_bio|safe}}
-                    </div>
-                    <a href="#description" class="btn btn-primary" data-toggle="collapse"
-                    aria-expanded="false" aria-controls="description">
-                    {% trans 'presenter.read_full' %}
+                    </p>
+                    <a id="info-toggle-btn" role="button" class="btn btn-primary collapsed" data-toggle="collapse" href="#collapse-one" aria-expanded="false" 
+                    aria-controls="collapse-one"> 
+                        <span class="if-collapsed">{% trans 'presenter.read_full' %}</span>
+                        <span class="if-not-collapsed">{% trans 'presenter.read_less' %}</span> 
                     </a>
                 </div>
+ 
             </div>  
         </div>
     </div>  
@@ -66,7 +68,7 @@
                     <h6 class="h5">
                         
                         {% if activity.start and activity.end %}
-                            <span class="sep">|</span>
+                            
                             <time>{{activity.start_time}}</time>&mdash;<time>{{activity.end_time}}</time>
                         {% endif %}
                     </h6>

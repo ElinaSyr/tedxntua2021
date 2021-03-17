@@ -220,6 +220,18 @@ class Activity(TranslatableModel):
     image_height = models.PositiveIntegerField(editable=False, null=True)
     image_width = models.PositiveIntegerField(editable=False, null=True)
 
+    image_alt = VersatileImageField(
+        'Image 2',
+        upload_to='activities/',
+        width_field='image_alt_width',
+        height_field='image_alt_height',
+        null=True,
+        blank=True,
+    )
+    image_alt_height = models.PositiveIntegerField(editable=False, null=True)
+    image_alt_width = models.PositiveIntegerField(editable=False, null=True)
+
+
     is_published = models.BooleanField(_('Published'), default=True)
 
     presenter = models.ForeignKey(
@@ -344,6 +356,18 @@ class Presenter(TranslatableModel):
     image_height = models.PositiveIntegerField(editable=False, null=True)
     image_width = models.PositiveIntegerField(editable=False, null=True)
 
+    image_alt = VersatileImageField(
+        'Image 2',
+        upload_to='presenters/',
+        width_field='image_alt_width',
+        height_field='image_alt_height',
+        null=True,
+        blank=True,
+    )
+    image_alt_height = models.PositiveIntegerField(editable=False, null=True)
+    image_alt_width = models.PositiveIntegerField(editable=False, null=True)
+    
+
     is_published = models.BooleanField(_('Published'), default=True)
 
     # Managers are an easy way to create custom filters for queries.
@@ -374,7 +398,7 @@ def warm_presenter_images(sender, instance, **kwargs):
     https://django-versatileimagefield.readthedocs.io/en/latest/overview.html#create-images-wherever-you-need-them
     '''
 
-    for field in ['image']:
+    for field in ['image', 'image_alt']:
         if getattr(instance, field, None):
             img_warmer = VersatileImageFieldWarmer(
                 instance_or_queryset=instance,
