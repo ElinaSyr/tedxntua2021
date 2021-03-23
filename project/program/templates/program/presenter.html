@@ -54,7 +54,6 @@
                         <span class="if-not-collapsed">{% trans 'presenter.read_less' %}</span> 
                     </a>
                 </div>
- 
             </div>  
         </div>
     </div>  
@@ -66,10 +65,8 @@
                 <div class="name_title">
                     <h5>{{activity.get_activity_type_display | upper}}: {{ activity.title }}</h5>
                     <h6 class="h5">
-                        
                         {% if activity.start and activity.end %}
-                            
-                            <time>{{activity.start_time}}</time>&mdash;<time>{{activity.end_time}}</time>
+                        <time>{{activity.start_time}}</time>&mdash;<time>{{activity.end_time}}</time>
                         {% endif %}
                     </h6>
                 </div>
