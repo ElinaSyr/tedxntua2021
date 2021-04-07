@@ -36,7 +36,6 @@ INSTALLED_APPS = [
     'webpack_loader',
     'django_extensions',
     'active_link',
-    # 'newsletter',
 ]
 
 MIDDLEWARE = [
@@ -198,4 +197,3 @@ TEDXNTUA_SHOW_UNPUBLISHED = env_bool('TEDXNTUA_SHOW_UNPUBLISHED', False)
 TEDXNTUA_TICKETS_ENABLED = env_bool('TEDXNTUA_TICKETS_ENABLED', True)
 TEDXNTUA_TICKETS_URL = env_str('TEDXNTUA_TICKETS_URL', '/')
 TEDXNTUA_SCHEDULE_ENABLED = env_bool('TEDXNTUA_SCHEDULE_ENABLED', True)
-

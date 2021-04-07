@@ -4,13 +4,27 @@
 {% get_available_languages as LANGUAGES %}
 {% get_current_language as CURR_LANG %}
 <section id="footer-main">
+    <div id="footer-social-container">
+        <a href="https://www.instagram.com/tedxntua/?hl=en" target="_blank">
+            <img src="{% static "images/social-instagram.png" %}">
+        </a>
+        <a href="https://www.facebook.com/tedxntua/" target="_blank">
+            <img src="{% static "images/social-facebook.png" %}">
+        </a>
+        <a href="https://www.linkedin.com/company/tedxntua/" target="_blank">
+            <img src="{% static "images/social-linkedin.png" %}">
+        </a>
+        <a href="https://www.youtube.com/channel/UCVtjgrrBdSPZERmdso2o0dw/featured" target="_blank">
+            <img src="{% static "images/social-youtube.png" %}">
+        </a>
+    </div>
     <div id="prev-talks" class="footer-container col-4">
         <header>
             <h4>Previous Talks</h4>
         </header>
         <a href="https://www.youtube.com/playlist?list=PLd7-PjFC85gz9xYWxVVqTddWLg75c8jZU" target="blank">
             <div id="prev-talks-card">
-                <img src="{% static "images/TED-talk-2016.jpg" %}" alt="">
+                <img class="lazy lazy-on-view" src="{% static "images/TED-talk-2016.jpg" %}" alt="">
                 <div class="prev-talks-btn">WATCH</div>
             </div>
             <div id="prev-talks-btn-sm"><i class="fa fa-youtube-play"></i>&nbsp; Previous Talks</div>
@@ -81,8 +95,12 @@
             <h4>Newsletter</h4>
         </header>
         <div id="newsletter-card">
-            <input class="input-field" type="email" name="email_field" placeholder="Your email"></input>
-            <div type="button" class="submit-btn btn-secondary">Submit</div>
+            <form id="newsletter-form">
+                <input id="newsletter-input-field" type="email" name="Email" placeholder="Your email"></input>
+            </form>
+            <div id="newsletter-submit-btn" class="submit-btn">
+                Submit
+            </div>
         </div>
     </div>
 </section>

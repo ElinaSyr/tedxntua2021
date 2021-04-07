@@ -1,4 +1,5 @@
 article.presenter-page {
+        
         .presenter {
             display: flex;
             flex-direction: column;
@@ -33,7 +34,7 @@ article.presenter-page {
                 #collapse-one { 
                     height: 120px; 
                     overflow-y: hidden;
-                    margin-right: 10%;
+                    margin-right: 0;
                     &.show {
                         height: max-content;
                         transition: 0.5s;
@@ -57,9 +58,9 @@ article.presenter-page {
             margin-left: 3.5%;
         }
     }
-
 @include media-breakpoint-up(sm) {
     article.presenter-page {
+        padding: 0 $page-padding-x-lg $page-padding-y-lg;
         .presenter {
             display: flex;
             flex-direction: row;
@@ -101,6 +102,11 @@ article.presenter-page {
                 .content {
                     line-height: 1.75;
                     padding: 5px;
+                }
+                #description {
+                    #collapse-one { 
+                        margin-right: 10%;
+                    }
                 }
             }
         }

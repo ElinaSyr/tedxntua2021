@@ -28,10 +28,10 @@
                 {% comment %}
                     For side events, link to the presenter
                 {% endcomment %}
-            <a class="col col-6 col-md-4 col-lg-4 col-xl-3 underline-parent"
+            <a class="col col-6 col-md-4 col-lg-3 col-xl-3 mx-xl-1 underline-parent"
                     href="{% url "presenter" slug=item.presenter.slug %}">
             {% else %}
-            <a class="col col-6 col-md-5 col-lg-3 col-xl-3 underline-parent"
+            <a class="col col-6 col-md-4 col-lg-3 col-xl-2 mx-xl-1 underline-parent"
                     href="{% url "presenter" slug=item.slug %}">
             {% endif %}
                 {% if item.image %}
@@ -54,9 +54,7 @@
                             <h4>{{item.occupation}}</h4>
                         </div>
                         <div class="boxing_elements">
-                                <h4>{{item.name}}</h4> 
-                                <h4>{{item.occupation}}</h4>
-                                <h4>Architecture today </h4>
+                                
                                 <h4> More info </h4>
                         </div>
                     </div>  
