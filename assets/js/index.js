@@ -5,5 +5,6 @@ import "./lazyload"
 import "./navigation"
 import "./navbar-shrink"
 import "./newsletter"
-import "@/partners/assets/js/partners.js"
-import "@/program/assets/js/toggle_info.js"
+// import "@/partners/assets/js/partners.js"
+
+

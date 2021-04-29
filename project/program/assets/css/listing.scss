@@ -1,3 +1,7 @@
+main article.listing-page {
+    padding: 0 $page-padding-x-lg $page-padding-y-lg;
+}
+
 article.listing-page {
     .listing-grid {
         h4 {
@@ -12,47 +16,66 @@ article.listing-page {
         width: 100%;
         a { 
             padding: 0px 5px;
-             .parent {
+            &.placeholder {
+                opacity: 0.6;
+                transform: none;
+                .parent:hover {
+                    .flip_card_inner {
+                        transform: none;
+                    }   
+                }
+            }
+            .parent {
                 position: relative;
-                width: 90%;
-                margin: auto;
-                margin-bottom:3em;
+                width: 100%;
+                margin: 1.5em auto;
+                height: calc(2*5vw + 10em);
                 .flip_card_inner {
+                    height: 100%;
+                    width: 100%;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
-                    transition: transform 0.6s;
+                    transition: transform 0.3s ease-out;
                     transform-style: preserve-3d; 
+                    overflow: hidden;
+                    border-radius: $border-radius;
                     .image1 {
-                        width: 100%;
-                        border-radius: 15px;
+                        width: 100%; 
+                    }
+                    .background-lower {
+                        z-index: 2;
+                        border-radius: 0 0 $border-radius $border-radius;
+                        opacity: 0.85;
+                        margin-top: auto;
+                        object-fit: contain;
                     }
                     .image2 {
                         position: absolute;
-                        height:auto;
-                        top: 0;
-                        padding: 6% 10%;
+                        height: 100%;
                         width: 100%;
+                        top: 0;
+                        object-fit: cover;
+                        border-radius: $border-radius;
+                        background: black;
                     }
                     .boxed {
                         position: absolute;
                         bottom: 0px;
-                        height: 5em;
+                        height: 20%;
                         width: 100%;
                         text-align: center;
                         display: flex;
                         align-items: center;
+                        justify-content: center;
                         flex-flow: column; 
                         word-break: break-all;
                         overflow: auto;
-                    }
-                    .boxing_elements {
-                        display: none; 
-                    }
-                    .boxing_elements {
-                        -webkit-backface-visibility: hidden;
-                        backface-visibility: hidden; 
+                        z-index: 2;
+                        h4:last-child {
+                            display: none;
+                        }
                     }
                 }
             }
@@ -65,43 +88,41 @@ article.listing-page {
             a .parent:hover {
                 .flip_card_inner {
                     transform: rotateY(180deg);
+                    img {
+                        transform: rotateY(-180deg);
+                    }
                 }
                 .boxed {
-                    display: none;
+                    h3, h4 {
+                        display: none;
+                    }
+                    h4:last-child {
+                        transition: transform 0.5s;
+                        display: block;
+                        transform: rotateY(180deg);
+                    }
                 }
-                .boxing_elements {
-                    display: flex;
-                    flex-direction: column;
-                    width: 100%;
-                    height: 100%;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    align-content: space-around;
-                    align-items: center;
-                    justify-content: end;
-                    transform: rotateY(180deg);
-                    transition: transform 2s;
-                    text-align: center;
-                    word-break: break-all;
-                    padding: 1em;
-                }   
             }
         }
     }
 }
 @include media-breakpoint-down(sm) { 
+    main article.listing-page{
+        padding: 0 $page-padding-x $page-padding-y;
+    }
+
     article.listing-page {
         .listing-grid {
             h4 {
-                font-size: 0.7rem;
+                font-size: 0.8rem;
             }
             h3 {
-                font-size: 1rem;
+                font-size: 1.2rem;
                 margin-bottom: 0.2rem;
             }
             a {
                 .parent {
+                    width: 95%;
                     .flip_card_inner {
                         .boxed {
                             bottom: 0.7em;
@@ -118,14 +139,18 @@ article.listing-page {
     }
 }
 @include media-breakpoint-down(xs) { 
+    main article.listing-page{
+        padding: 0 5px;
+    }
+
     article.listing-page {
         .listing-grid {
             h4 {
-                font-size: 0.6rem;
+                font-size: 0.7rem;
             }
             h3 {
-                font-size: 0.8rem;
-                margin-bottom: 0.2rem;
+                font-size: 0.9rem;
+                margin-bottom: 0.1rem;
             }
             a {
                 .parent {
@@ -144,5 +169,3 @@ article.listing-page {
         }
     }
 }
-
-

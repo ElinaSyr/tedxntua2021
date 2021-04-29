@@ -1,87 +1,101 @@
+main article.presenter-page {
+    padding: 1rem $page-padding-x-lg $page-padding-y-lg;
+}
+
 article.presenter-page {
-        
-        .presenter {
-            display: flex;
-            flex-direction: column;
-            margin-top: 1.5em;
-        }
-        img {
-            margin: 0;
-            width: 100%;
-            height: auto;
-            flex-shrink: 0;
-        }
-        .image-placeholder div {
-            width: 50vw;
-            height: 50vw;
-            margin: 0 auto;
-        }
-        .info {
+    margin-top: 1em;
+    .back-btn {
+        margin: 1em;
+    }
+    .presenter {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.5em;
+    }
+    img {
+        margin: 0;
+        width: 100%;
+        height: auto;
+        flex-shrink: 0;
+        border-radius: $border-radius;
+        background: black;
+    }
+    .image-placeholder div {
+        width: 50vw;
+        height: 50vw;
+        margin: 0 auto;
+    }
+    .info {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        .name_link_oc {
             display:flex;
             flex-direction: column;
-            justify-content: center;
-            .name_link_oc {
-                display:flex;
-                flex-direction: column;
-                margin-left: 3.5%;
-                .name_link {
-                    display:flex; 
-                    flex-direction: row;
-                    flex-wrap:nowrap;
-                }
-            }
-            #description {
-                #collapse-one { 
-                    height: 120px; 
-                    overflow-y: hidden;
-                    margin-right: 0;
-                    &.show {
-                        height: max-content;
-                        transition: 0.5s;
-                    }
-                    &.collapse:not(.show) {
-                        display: flex;
-                    }
-                }
-            }
-            [data-toggle="collapse"].collapsed .if-not-collapsed {
-                display: none;
-              }
-            [data-toggle="collapse"]:not(.collapsed) .if-collapsed {
-                display: none;
+            margin-left: 3.5%;
+            .name_link {
+                display:flex; 
+                flex-direction: row;
+                flex-wrap:nowrap;
             }
         }
-        .activities {
-            display: flex;
-            flex-direction: row;
-            margin-top: 3em;
-            margin-left: 3.5%;
+        #description {
+            word-wrap: break-word;
+            #collapse-one { 
+                height: 120px; 
+                overflow-y: hidden;
+                &.show {
+                    height: max-content;
+                    transition: 0.5s;
+                }
+                &.collapse:not(.show) {
+                    display: flex;
+                }
+            }
+        }
+        [data-toggle="collapse"].collapsed .if-not-collapsed {
+            display: none;
+          }
+        [data-toggle="collapse"]:not(.collapsed) .if-collapsed {
+            display: none;
         }
     }
+    .activities {
+        display: flex;
+        flex-direction: row;
+        margin-top: 3em;
+        margin-left: 3.5%;
+    }
+}
 @include media-breakpoint-up(sm) {
     article.presenter-page {
-        padding: 0 $page-padding-x-lg $page-padding-y-lg;
+        padding: 1rem $page-padding-x-lg $page-padding-y-lg;
         .presenter {
             display: flex;
             flex-direction: row;
             margin-top: 1.5em;
             padding: 0.1em;
             margin: 0em;
-            img {
-                width: 100%;
-                height: auto;
-                flex-shrink: 0;
-                padding: 1em;
-                object-fit: cover;
-                padding-left: 0em; 
-                min-width: 9em;
-                min-height: 14em;
-            }
-            .image-placeholder div {
-                width: 30em;
-                max-width: 50vw;
-                height: 30em;
-                max-height: 50vw;
+            .col-sm-3 .image_box{
+                display: flex;
+                flex-direction: row;
+                img {
+                    width: 100%;
+                    height: auto;
+                    flex-shrink: 0;
+                    object-fit: cover;
+                    padding-left: 0em; 
+                    min-width: 10em;
+                    min-height: 14em;
+                    border-radius: $border-radius;
+                    margin-top: 0.3em
+                }
+                .image-placeholder div {
+                    width: 30em;
+                    max-width: 50vw;
+                    height: 30em;
+                    max-height: 50vw;
+                }
             }
             .info {
                 display: flex;
@@ -93,7 +107,6 @@ article.presenter-page {
                     max-width: 100%;
                     padding: 2px;
                     margin-left: 1%;
-                    margin-top:1em;
                     .name_link {
                         display:flex;
                         flex-direction: row;
@@ -106,6 +119,7 @@ article.presenter-page {
                 #description {
                     #collapse-one { 
                         margin-right: 10%;
+                        word-wrap: break-word;
                     }
                 }
             }
@@ -120,7 +134,6 @@ article.presenter-page {
                 border-left: 1px solid rgb(255, 255, 255);
                 margin-left: 2.3%;
                 .name_title {
-                    //border: 2px solid rgb(255, 255, 255);
                     padding: 5px;
                 }
                 .content {
@@ -143,6 +156,36 @@ article.presenter-page {
         h5 {
             margin-bottom: .25rem;
             color: rgb(255, 255, 255);
+        }
+    }
+}
+@include media-breakpoint-down(md) {
+    main article.presenter-page {
+        padding: 0 1rem $page-padding-y-lg;
+        .presenter{
+            .info{
+                padding-left: 10%;
+                .name_link_oc{
+                    margin-left: 2%;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 750px) and (max-width: 991px){
+    main article.presenter-page{
+        .presenter{
+            .info{
+                padding-left: 0em;
+            }
+        }
+    }
+}
+@include media-breakpoint-down(xs) {
+    main article.presenter-page{
+        padding: 0 $page-padding-x $page-padding-y;
+        .info {
+            margin-top: 2em;
         }
     }
 }

@@ -62,7 +62,7 @@ class Partner(TranslatableModel):
     MEDIA_PARTNERS = 'MP'
     COMMUNITY_PARTNERS = 'CP'
     PARTNER_TYPES = (
-        (PLATINUM_SPONSORS, _('Platinum Sponsor')),
+        (PLATINUM_SPONSORS, _('Platinum Sponsors')),
         (GRAND_SPONSORS, _('Grand Sponsors')),
         (GRAND_CARRIER_SPONSORS, _('Grand Carrier Sponsors')),
         (GRAND_HOSPITALITY_SPONSORS, _('Grand Hospitality Sponsors')),
@@ -76,6 +76,10 @@ class Partner(TranslatableModel):
     )
     partner_type = models.CharField(max_length=3, choices=PARTNER_TYPES)
     link = models.URLField()
+    career_link = models.URLField(
+        null=True,
+        blank=True,
+    )
 
     image = VersatileImageField(
         'Image',
