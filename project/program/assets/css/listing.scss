@@ -5,10 +5,11 @@ main article.listing-page {
 article.listing-page {
     .listing-grid {
         h4 {
-            font-size: 1rem;
+            font-size: 0.87rem;
         }
         h3 {
             font-size: 1.2rem;
+            margin: auto;
         }
         display: flex;
         flex-flow: row wrap;
@@ -17,8 +18,12 @@ article.listing-page {
         a { 
             padding: 0px 5px;
             &.placeholder {
-                opacity: 0.6;
+                opacity: 0.9;
                 transform: none;
+                .boxed{
+                    display: flex;
+                    justify-content: center;
+                }
                 .parent:hover {
                     .flip_card_inner {
                         transform: none;
@@ -41,6 +46,7 @@ article.listing-page {
                     transform-style: preserve-3d; 
                     overflow: hidden;
                     border-radius: $border-radius;
+                    box-shadow: $box-shadow-soft;
                     .image1 {
                         width: 100%; 
                     }
@@ -58,21 +64,19 @@ article.listing-page {
                         top: 0;
                         object-fit: cover;
                         border-radius: $border-radius;
-                        background: black;
                     }
                     .boxed {
                         position: absolute;
                         bottom: 0px;
-                        height: 20%;
+                        height: 23%;
                         width: 100%;
                         text-align: center;
                         display: flex;
                         align-items: center;
-                        justify-content: center;
                         flex-flow: column; 
-                        word-break: break-all;
                         overflow: auto;
                         z-index: 2;
+                        word-break: break-word;
                         h4:last-child {
                             display: none;
                         }
@@ -85,7 +89,7 @@ article.listing-page {
 @include media-breakpoint-up(sm) {
     article.listing-page { 
         .listing-grid{
-            a .parent:hover {
+            a:not(.placeholder) .parent:hover {
                 .flip_card_inner {
                     transform: rotateY(180deg);
                     img {
@@ -99,7 +103,9 @@ article.listing-page {
                     h4:last-child {
                         transition: transform 0.5s;
                         display: block;
-                        transform: rotateY(180deg);
+                        transform: rotateY(-180deg);
+                        margin: auto;
+                        font-size: 1.1rem;
                     }
                 }
             }
@@ -117,19 +123,19 @@ article.listing-page {
                 font-size: 0.8rem;
             }
             h3 {
-                font-size: 1.2rem;
+                font-size: 1rem;
                 margin-bottom: 0.2rem;
+                font-weight: bold;
             }
             a {
                 .parent {
                     width: 95%;
                     .flip_card_inner {
                         .boxed {
-                            bottom: 0.7em;
                             height: 3.5em;
                             align-items: stretch;
                             position: absolute;
-                            bottom: 0px;
+                            bottom: 3%;
                             width: 100%;
                         }
                     }
@@ -142,7 +148,59 @@ article.listing-page {
     main article.listing-page{
         padding: 0 5px;
     }
-
+    article.listing-page {
+        .listing-grid {
+            h4 {
+                font-size: 0.71rem;
+            }
+            h3 {
+                font-size: 1rem;
+                margin-bottom: 0.1rem;
+            }
+            a {
+                .parent {
+                    .flip_card_inner {
+                        .boxed {
+                            bottom: 0.7em;
+                            height: 3.6em;
+                            align-items: stretch;
+                            position: absolute;
+                            bottom: 0px;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 320px) {
+    article.listing-page {
+        .listing-grid {
+            h4 {
+                font-size: 0.6rem;
+                font-weight: 400;
+            }
+            h3 {
+                font-size: 0.8rem;
+                margin-bottom: 0.1rem;
+            }
+            a .parent .flip_card_inner .boxed{
+                height: 3em;
+            }
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 1199px){
+    article.listing-page {
+        .listing-grid {
+            a .parent .flip_card_inner .boxed{
+                height: 5em;
+            }
+        }
+    }
+}
+@media (min-width: 1199px) and (max-width: 1265px){
     article.listing-page {
         .listing-grid {
             h4 {
@@ -151,20 +209,6 @@ article.listing-page {
             h3 {
                 font-size: 0.9rem;
                 margin-bottom: 0.1rem;
-            }
-            a {
-                .parent {
-                    .flip_card_inner {
-                        .boxed {
-                            bottom: 0.7em;
-                            height: 3em;
-                            align-items: stretch;
-                            position: absolute;
-                            bottom: 0px;
-                            width: 100%;
-                        }
-                    }
-                }
             }
         }
     }
