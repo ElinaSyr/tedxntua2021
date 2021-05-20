@@ -18,7 +18,7 @@ article.listing-page {
         a { 
             padding: 0px 5px;
             &.placeholder {
-                opacity: 0.9;
+                opacity: 0.75;
                 transform: none;
                 .boxed{
                     display: flex;
@@ -47,6 +47,7 @@ article.listing-page {
                     overflow: hidden;
                     border-radius: $border-radius;
                     box-shadow: $box-shadow-soft;
+                    background: rgba(49, 49, 49, 0.5);
                     .image1 {
                         width: 100%; 
                     }
@@ -79,6 +80,10 @@ article.listing-page {
                         word-break: break-word;
                         h4:last-child {
                             display: none;
+                        }
+                        p {
+                            margin: auto;
+                            font-family: $font-family-serif;
                         }
                     }
                 }
@@ -120,7 +125,7 @@ article.listing-page {
     article.listing-page {
         .listing-grid {
             h4 {
-                font-size: 0.8rem;
+                font-size: 0.9rem;
             }
             h3 {
                 font-size: 1rem;
@@ -174,7 +179,8 @@ article.listing-page {
         }
     }
 }
-@media (max-width: 320px) {
+
+@media (max-width: 370px) {
     article.listing-page {
         .listing-grid {
             h4 {

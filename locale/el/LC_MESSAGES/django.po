@@ -10,6 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 "POT-Creation-Date: 2021-03-04 09:32+0200\n"
 =======
 "POT-Creation-Date: 2021-03-17 23:20+0200\n"
@@ -17,6 +18,9 @@ msgstr ""
 =======
 "POT-Creation-Date: 2021-04-29 21:43+0300\n"
 >>>>>>> 14aba27c7712817739c18916d7e8c102657c85cd
+=======
+"POT-Creation-Date: 2021-05-09 10:53+0300\n"
+>>>>>>> 64fb14e340907923065cfa925ec2a67cba834f92
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -149,15 +153,19 @@ msgstr ""
 "μεμονωμένα γεγονότα TEDx είναι αυτόνομα οργανωμένα (σύμφωνα με ορισμένους "
 "κανόνες και κανονισμούς).</p>"
 
+#: .\project\home\templates\home\dialogues.html:4
+msgid "DIALOGUES"
+msgstr ""
+
 #: .\project\home\templates\home\hero.html:13
 msgid "home.date"
 msgstr "29 Μαΐου 2021"
 
-#: .\project\home\templates\home\hero.html:29
+#: .\project\home\templates\home\hero.html:30
 msgid "home.dualism_logo"
 msgstr ""
 
-#: .\project\home\templates\home\hero.html:38
+#: .\project\home\templates\home\hero.html:40
 msgid "tickets.cta"
 msgstr "Κάνε κράτηση!"
 
@@ -183,7 +191,7 @@ msgstr "ΟΜΙΛΗΤΕΣ"
 #: .\project\program\templates\program\_event-tabs.html:8
 #: .\project\templates\layouts\partials\nav.html:56
 msgid "Performers"
-msgstr "PERFORMERS"
+msgstr "ΕΡΜΗΝΕΥΤΕΣ"
 
 #: .\project\home\templates\home\lineup.html:23
 #: .\project\program\templates\program\_event-tabs.html:11
@@ -192,9 +200,9 @@ msgid "Side events"
 msgstr "SIDE EVENTS"
 
 #: .\project\home\templates\home\lineup.html:68
-#: .\project\program\templates\program\listing.html:79
+#: .\project\program\templates\program\listing.html:73
 msgid "more_soon"
-msgstr "Σύντομα περισσότερα"
+msgstr "ΣΥΝΤΟΜΑ ΠΕΡΙΣΣΟΤΕΡΑ"
 
 #: .\project\home\templates\home\lineup.html:78
 #: .\project\program\models.py:197
@@ -203,30 +211,23 @@ msgstr "ΠΑΡΟΥΣΙΑΖΕΙ"
 
 #: .\project\home\templates\home\summary.html:14
 msgid "home.ubuntu_summary"
-msgstr ""
-"<h3>ΤΙ ΣΗΜΑΙΝΕΙ UBUNTU ? </h3><p><strong>ΔΥΪΣΜΟΣ</strong>, η προσπάθεια "
-"ερμηνείας του κόσμου με βάση <strong>δύο εξηγητικές αρχές</strong> που "
-"συνεργάζονται και συνενεργούν. Η αποδοχή του δυϊσμού ως <strong>βάση "
-"σύνδεσης και δημιουργίας</strong>, η κατάρριψη της σύνδεσής του με την "
-"αντίθεση.</p>"
+msgstr "<h3>ΤΙ ΣΗΜΑΙΝΕΙ UBUNTU ? </h3>"
 
 #: .\project\home\templates\home\summary.html:15
 msgid "home.ubuntu_full"
 msgstr ""
-"<p>Στο φετινό μας συνέδριο προσεγγίζουμε θεματικές που άπτονται σύγχρονων "
-"κοινωνικών, ανθρωπιστικών, καλλιτεχνικών και επιστημονικών θεμάτων, τα οποία "
-"συνίστανται από δύο αρχές.</p><p>Πρόκειται για δύο αρχές που φαινομενικά "
-"ασυσχέτιστες που ανταγωνίζονται η μία την άλλη, αλλά στην πραγματικότητα "
-"αλληλοσυμπληρώνονται και συνεργούν στην επίτευξη μιας αρμονικής ενότητας.</"
-"p><p>Τι είναι ο άνθρωπος, ψυχή και σώμα ή μόνο ύλη; Πώς από τον "
-"κυματοσωματιδιακό δυϊσμό οδηγούμαστε στην τεχνολογία αιχμής των κβαντικών "
-"υπολογιστών; Πώς από την ταυτόχρονη συνύπαρξη του ηλεκτρισμού και του "
-"μαγνητισμού και της συσχέτισης τους από τον Maxwell οδηγούμαστε στη σύγχρονη "
-"οικονομία και κοινωνία; Πώς ο ψηφιακός δυισμός καθορίζει την καθημερινή μας "
-"ζωή; Πώς η αντίθεση λευκού και μαύρου συνθέτουν την εσάνς μιας φωτογραφίας; "
-"Πώς το κενό και το πλήρες συνθέτουν τοπία στην αρχιτεκτονική;</p><p>Σε όλα "
-"τα παραπάνω γίνεται σαφής η σχέση εξάρτησης των εκάστοτε εννοιών. Χωρίς την "
-"ύπαρξη της μίας αναιρείται το νόημα ύπαρξης της άλλης.</p>"
+"<p>Πως η κάθε μικρή πράξη μας επηρεάζει τον συνάνθρωπό μας; </p><p>Πώς "
+"γίνεται να συνδεόμαστε όλοι μεταξύ μας; </p><p>Μήπως αυτό σημαίνει ότι "
+"είμαστε όλοι ίσοι; </p><p>Το Ubuntu είναι μια λέξη με διττή σημασία. Από τη "
+"μια είναι ευρέως γνωστή για  την ονομασία του λογισμικού ανοιχτού κώδικα και "
+"από την άλλη αποτελεί ένα αφρικανικό γνωμικό που προέρχεται από τη φυλή των "
+"Ζουλού. Συγκεκριμένα σημαίνει «Εγώ είμαι επειδή εσύ είσαι». Έχει τις ρίζες "
+"του στην ανθρωπιστική αφρικανική φιλοσοφία, όπου η ιδέα της κοινότητας είναι "
+"ένα από τα δομικά στοιχεία της κοινωνίας. Το Ubuntu είναι αυτή η νεφελώδης "
+"έννοια της ενότητας, της ανθρωπιάς, της πληρότητας, της αλληλεγγύης και της "
+"πίστης σε ένα παγκόσμιο δεσμό που ενώνει όλη την ανθρωπότητα. <p>Τι σημαίνει "
+"πραγματικά ubuntu και με πόσα πράγματα μπορεί να συνδεθεί; </p><p>Η ομάδα "
+"του TEDxNTUA 2021 θα δώσει της δικής της ερμηνεία στις 29 Μαΐου. </p>"
 
 #: .\project\home\templates\home\venue.html:4
 msgid "home.venue.title"
@@ -298,7 +299,7 @@ msgstr "Χορηγοί Επικοινωνίας"
 msgid "Community Partners"
 msgstr "Συνεργάτες Κοινότητας"
 
-#: .\project\partners\models.py:93 .\project\program\models.py:223
+#: .\project\partners\models.py:97 .\project\program\models.py:223
 #: .\project\program\models.py:347 .\project\team\models.py:103
 msgid "Published"
 msgstr "Δημόσιο"
@@ -319,11 +320,11 @@ msgstr ""
 "συμμερίζονται τις αξίες και τα οράματά μας. Επισκεφθείτε τις ιστοσελίδες "
 "τους και μάθετε περισσότερα για αυτούς."
 
-#: .\project\partners\templates\partners\index.html:38
+#: .\project\partners\templates\partners\index.html:76
 msgid "career site"
 msgstr "CAREER SITE"
 
-#: .\project\partners\templates\partners\index.html:42
+#: .\project\partners\templates\partners\index.html:80
 msgid "website"
 msgstr "ΣΕΛΙΔΑ"
 
@@ -423,6 +424,7 @@ msgid "side_events.description"
 msgstr "Μάθε περισσότερα για τα side events του φετινού TEDxNTUA 2020!"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: .\project\program\templates\program\old_presenter.html:9
 #: .\project\program\templates\program\presenter.html:9
 msgid "back"
@@ -431,12 +433,22 @@ msgstr "Πίσω"
 #: .\project\program\templates\program\old_presenter.html:36
 #: .\project\program\templates\program\presenter.html:53
 =======
+=======
+#: .\project\program\templates\program\listing.html:56
+msgid "more_info"
+msgstr "ΠΕΡΙΣΣΟΤΕΡΕΣ ΠΛΗΡΟΦΟΡΙΕΣ"
+
+>>>>>>> 64fb14e340907923065cfa925ec2a67cba834f92
 #: .\project\program\templates\program\presenter.html:10
 msgid "back"
 msgstr "Πίσω"
 
+<<<<<<< HEAD
 #: .\project\program\templates\program\presenter.html:54
 >>>>>>> 14aba27c7712817739c18916d7e8c102657c85cd
+=======
+#: .\project\program\templates\program\presenter.html:56
+>>>>>>> 64fb14e340907923065cfa925ec2a67cba834f92
 msgid "presenter.read_full"
 msgstr "Διάβασε περισσότερα"
 
@@ -444,7 +456,7 @@ msgstr "Διάβασε περισσότερα"
 msgid "presenter.read_less"
 msgstr "Διάβασε λιγότερα"
 
-#: .\project\program\templates\program\presenter.html:55
+#: .\project\program\templates\program\presenter.html:57
 msgid "presenter.read_less"
 msgstr "Διάβασε λιγότερα"
 
@@ -491,11 +503,11 @@ msgstr "Προηγούμενες Ομιλίες"
 
 #: .\project\templates\layouts\partials\footer.html:28
 msgid "WATCH"
-msgstr "ΔΕΣ ΤΙΣ"
+msgstr "ΠΑΡΑΚΟΛΟΥΘΗΣΕ"
 
 #: .\project\templates\layouts\partials\footer.html:35
 msgid "Previous Events"
-msgstr "Προηγούμενα Event"
+msgstr "Προηγούμενες Εκδηλώσεις"
 
 #: .\project\templates\layouts\partials\footer.html:95
 msgid "Newsletter"
@@ -505,17 +517,25 @@ msgstr "Newsletter"
 msgid "Submit"
 msgstr "Εγγραφή"
 
+<<<<<<< HEAD
 >>>>>>> 14aba27c7712817739c18916d7e8c102657c85cd
 #: .\project\templates\layouts\partials\footer.html:112
+=======
+#: .\project\templates\layouts\partials\footer.html:113
+>>>>>>> 64fb14e340907923065cfa925ec2a67cba834f92
 msgid "Privacy Policy"
 msgstr "Πολιτική Απορρήτου"
 
-#: .\project\templates\layouts\partials\footer.html:115
+#: .\project\templates\layouts\partials\footer.html:116
 msgid "Terms of Use"
 msgstr "Όροι Χρήσης"
 
+<<<<<<< HEAD
 #: .\project\templates\layouts\partials\footer.html:119
 >>>>>>> cf06239a8b7405036f5d3050c0cbb882081e4c1b
+=======
+#: .\project\templates\layouts\partials\footer.html:120
+>>>>>>> 64fb14e340907923065cfa925ec2a67cba834f92
 msgid "This independent TEDx event is operated under license from TED."
 msgstr ""
 "Αυτή η ανεξάρτητα οργανωμένη εκδήλωση TEDx λειτουργεί με άδεια από το TED."

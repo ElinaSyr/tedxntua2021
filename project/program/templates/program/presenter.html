@@ -12,7 +12,7 @@
     {% endif %}
     <div class="presenter">
         {% if presenter.image %}
-        <div class = "col-sm-3">
+        <div class="col-sm-3">
             <div class = "image_box">
                 <img class="image"
                     srcset="{{ presenter.image.thumbnail.320x320.url }} 320w,
@@ -23,16 +23,15 @@
                             1024px"
                     src="{{ presenter.image.thumbnail.320x320.url }}"
                     alt="" />
-            {% else %}
-                <div class="image image-placeholder" aria-hidden="true">
-                    <div class="squares-overlayed blue-black"></div>
-                </div>
-            {% endif %}
+            </div>
+        {% else %}
+            <div class="image image-placeholder" aria-hidden="true">
+                <div class="squares-overlayed blue-black"></div>
             </div>
         </div>
 
         <div class ="info">
-            <div class="col-sm-15">
+            <div class="col-sm-9">
                 <div class="name_link_oc">
                     <div class="name_link">
                         <h1>{{presenter.name}}</h1>
@@ -47,7 +46,7 @@
                     </div>
                     <h3>{{presenter.occupation}}</h3>
                 </div>
-                <div id="description" class="container" >
+                <div id="description" class="description-container" >
                     <p class="" id="collapse-one" aria-expanded="false">
                         {{presenter.short_bio|safe}}
                     </p>
@@ -63,7 +62,7 @@
 
     <div class="activities">
         {% for activity in activities %}
-        <div class="activity">
+        <div class="activity col-sm-9">
             <header>
                 <div class="name_title">
                     <h5>{{activity.get_activity_type_display | upper}}: {{ activity.title }}</h5>

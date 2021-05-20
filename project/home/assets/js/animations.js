@@ -8,15 +8,19 @@ var $logoContent = $('.content');
 
 // Start animations when all assets are loaded
 $(document).ready(function() {
-    $totems.each(function() {
-        $(this).css('transform', 'translate(0,0)')
-        $(this).css('opacity', '1')
-    })
+    setTimeout(function() {
+        $totems.each(function() {
+            $(this).css('transform', 'translate(0,0)')
+            $(this).css('opacity', '1')
+        })
+    }, 500);
     
-    $logoContent.each(function() {
-        $(this).css('transform', 'scale(1)');
-        $(this).css('opacity', '1')
-    })
+    setTimeout(function() {
+        $logoContent.each(function() {
+            $(this).css('transform', 'scale(1)')
+            $(this).css('opacity', '1')
+        })
+    }, 100);
 });
 
 $win.on('scroll', function () {

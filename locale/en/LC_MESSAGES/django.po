@@ -10,6 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 "POT-Creation-Date: 2021-03-04 09:31+0200\n"
 =======
 "POT-Creation-Date: 2021-03-17 23:19+0200\n"
@@ -17,6 +18,9 @@ msgstr ""
 =======
 "POT-Creation-Date: 2021-04-29 21:43+0300\n"
 >>>>>>> 14aba27c7712817739c18916d7e8c102657c85cd
+=======
+"POT-Creation-Date: 2021-05-09 10:53+0300\n"
+>>>>>>> 64fb14e340907923065cfa925ec2a67cba834f92
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -137,15 +141,19 @@ msgstr ""
 "general guidance for the TEDx program, but individual TEDx event are self-"
 "organized. (Subject to certain rules and regulations.)</p>"
 
+#: .\project\home\templates\home\dialogues.html:4
+msgid "DIALOGUES"
+msgstr ""
+
 #: .\project\home\templates\home\hero.html:13
 msgid "home.date"
 msgstr "May 29th 2021"
 
-#: .\project\home\templates\home\hero.html:29
+#: .\project\home\templates\home\hero.html:30
 msgid "home.dualism_logo"
 msgstr ""
 
-#: .\project\home\templates\home\hero.html:38
+#: .\project\home\templates\home\hero.html:40
 msgid "tickets.cta"
 msgstr "Get your tickets!"
 
@@ -180,41 +188,33 @@ msgid "Side events"
 msgstr "SIDE EVENTS"
 
 #: .\project\home\templates\home\lineup.html:68
-#: .\project\program\templates\program\listing.html:79
+#: .\project\program\templates\program\listing.html:73
 msgid "more_soon"
-msgstr "More soon"
+msgstr "MORE SOON"
 
 #: .\project\home\templates\home\lineup.html:78
 #: .\project\program\models.py:197
 msgid "Hosting"
-msgstr "HOSTING"
+msgstr "HOSTED BY"
 
 #: .\project\home\templates\home\summary.html:14
 msgid "home.ubuntu_summary"
-msgstr ""
-"<h3>WHAT IS UBUNTU ? </h3><p><strong>DUALISM</strong> is the interpretation "
-"of the world based on <strong>two principles</strong> that act jointly and "
-"collaborate with each other. It is proposed to be <strong>the basis of "
-"connection and creation</strong>, rather than the foundation of opposition.</"
-"p>"
+msgstr "<h3>WHAT IS UBUNTU ? </h3>"
 
 #: .\project\home\templates\home\summary.html:15
 msgid "home.ubuntu_full"
 msgstr ""
-"<p>In this year's event, we approach subjects that touch upon current "
-"social, humanitarian, artistic and scientific issues, which consist of two "
-"principles.</p><p>The two principles seem to be unrelated and opposite to "
-"one another, but in reality they complement each other and act jointly to "
-"achieve a harmonious unity.</p><p>What are humans made of? Mind and body or "
-"just matter? How does the wave&mdash;particle duality lead to the cutting-"
-"edge technology of quantum computing? How do the parallel existence of "
-"electricity and magnetism and their relationship as identified by Maxwell, "
-"lead to our modern economy and society? How does digital dualism define our "
-"daily life? How does the contrast between white and black compose the "
-"essence of a picture? How do emptiness and fullness compose landscapes in "
-"architecture?</p><p>In all of the above, the dependence relationship between "
-"the two principles is clear. Without the existence of the first, the meaning "
-"of the other is negated.</p>"
+"<p>How does every little act affect our fellow men? </p><p>How do we all "
+"connect with each other? </p><p>Does that mean we are all equal? </"
+"p><p>Ubuntu is a word with a double meaning. On the one hand it is widely "
+"known for its open source software name and on the other it is an African "
+"proverb that comes from the Zulu tribe. Specifically it means «I am because "
+"you are». It has its roots in African humanitarian philosophy, where the "
+"idea of ​​community is one of the building blocks of society. Ubuntu is this "
+"cloudy concept of unity, humanity, completeness, solidarity and faith in a "
+"global bond that unites all of humanity. </p><p>What does ubuntu really mean "
+"and how many things can it connect to? </p><p>The TEDxNTUA 2021 team will "
+"give its own interpretation on 29th of May. </p>"
 
 #: .\project\home\templates\home\venue.html:4
 msgid "home.venue.title"
@@ -285,7 +285,7 @@ msgstr ""
 msgid "Community Partners"
 msgstr ""
 
-#: .\project\partners\models.py:93 .\project\program\models.py:223
+#: .\project\partners\models.py:97 .\project\program\models.py:223
 #: .\project\program\models.py:347 .\project\team\models.py:103
 msgid "Published"
 msgstr ""
@@ -301,11 +301,11 @@ msgstr ""
 "organizations that share our values and visions. Visit their websites and "
 "learn more about them."
 
-#: .\project\partners\templates\partners\index.html:38
+#: .\project\partners\templates\partners\index.html:76
 msgid "career site"
 msgstr "CAREER SITE"
 
-#: .\project\partners\templates\partners\index.html:42
+#: .\project\partners\templates\partners\index.html:80
 msgid "website"
 msgstr "WEBSITE"
 
@@ -395,6 +395,7 @@ msgid "side_events.description"
 msgstr "Learn more about the side events of the TEDxNTUA 2021 event!"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #: .\project\program\templates\program\old_presenter.html:9
 #: .\project\program\templates\program\presenter.html:9
 msgid "back"
@@ -403,12 +404,22 @@ msgstr "Back"
 #: .\project\program\templates\program\old_presenter.html:36
 #: .\project\program\templates\program\presenter.html:53
 =======
+=======
+#: .\project\program\templates\program\listing.html:56
+msgid "more_info"
+msgstr "MORE INFO"
+
+>>>>>>> 64fb14e340907923065cfa925ec2a67cba834f92
 #: .\project\program\templates\program\presenter.html:10
 msgid "back"
 msgstr "Back"
 
+<<<<<<< HEAD
 #: .\project\program\templates\program\presenter.html:54
 >>>>>>> 14aba27c7712817739c18916d7e8c102657c85cd
+=======
+#: .\project\program\templates\program\presenter.html:56
+>>>>>>> 64fb14e340907923065cfa925ec2a67cba834f92
 msgid "presenter.read_full"
 msgstr "Read more"
 
@@ -416,7 +427,7 @@ msgstr "Read more"
 msgid "presenter.read_less"
 msgstr "Read less"
 
-#: .\project\program\templates\program\presenter.html:55
+#: .\project\program\templates\program\presenter.html:57
 msgid "presenter.read_less"
 msgstr "Read less"
 
@@ -477,17 +488,25 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
+<<<<<<< HEAD
 >>>>>>> 14aba27c7712817739c18916d7e8c102657c85cd
 #: .\project\templates\layouts\partials\footer.html:112
+=======
+#: .\project\templates\layouts\partials\footer.html:113
+>>>>>>> 64fb14e340907923065cfa925ec2a67cba834f92
 msgid "Privacy Policy"
 msgstr ""
 
-#: .\project\templates\layouts\partials\footer.html:115
+#: .\project\templates\layouts\partials\footer.html:116
 msgid "Terms of Use"
 msgstr ""
 
+<<<<<<< HEAD
 #: .\project\templates\layouts\partials\footer.html:119
 >>>>>>> cf06239a8b7405036f5d3050c0cbb882081e4c1b
+=======
+#: .\project\templates\layouts\partials\footer.html:120
+>>>>>>> 64fb14e340907923065cfa925ec2a67cba834f92
 msgid "This independent TEDx event is operated under license from TED."
 msgstr ""
 

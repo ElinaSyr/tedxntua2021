@@ -18,7 +18,8 @@ article.presenter-page {
         height: auto;
         flex-shrink: 0;
         border-radius: $border-radius;
-        background: black;
+        box-shadow: $box-shadow-soft;
+        background: rgba(49, 49, 49, 0.5);
     }
     .image-placeholder div {
         width: 50vw;
@@ -41,8 +42,10 @@ article.presenter-page {
         }
         #description {
             word-wrap: break-word;
+            font-family: $font-family-serif;
+            margin-left: 2%;
             #collapse-one { 
-                height: 120px; 
+                height: 100px; 
                 overflow-y: hidden;
                 &.show {
                     height: max-content;
@@ -64,9 +67,31 @@ article.presenter-page {
         display: flex;
         flex-direction: row;
         margin-top: 3em;
-        margin-left: 3.5%;
     }
 }
+
+@include media-breakpoint-down(xs) {
+    main article.presenter-page{
+        padding: 0 $page-padding-x $page-padding-y;
+        .presenter .info {
+            margin-top: 2em;
+            .name_link_oc {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 750px) and (max-width: 991px){
+    main article.presenter-page{
+        .presenter{
+            .info{
+                padding-left: 0em;
+            }
+        }
+    }
+}
+
 @include media-breakpoint-up(sm) {
     article.presenter-page {
         padding: 1rem $page-padding-x-lg $page-padding-y-lg;
@@ -76,19 +101,18 @@ article.presenter-page {
             margin-top: 1.5em;
             padding: 0.1em;
             margin: 0em;
-            .col-sm-3 .image_box{
+            .col-sm-3 .image_box {
                 display: flex;
-                flex-direction: row;
                 img {
                     width: 100%;
                     height: auto;
                     flex-shrink: 0;
                     object-fit: cover;
                     padding-left: 0em; 
-                    min-width: 10em;
+                    // min-width: 10em;
                     min-height: 14em;
                     border-radius: $border-radius;
-                    margin-top: 0.3em
+                    margin-top: 0.3em;
                 }
                 .image-placeholder div {
                     width: 30em;
@@ -101,6 +125,7 @@ article.presenter-page {
                 display: flex;
                 align-content: right;
                 flex-direction: row;
+                justify-content: flex-start;
                 .name_link_oc {
                     display:flex;
                     flex-direction: column;
@@ -108,7 +133,7 @@ article.presenter-page {
                     padding: 2px;
                     margin-left: 1%;
                     .name_link {
-                        display:flex;
+                        display: flex;
                         flex-direction: row;
                     }
                 }
@@ -164,7 +189,6 @@ article.presenter-page {
         padding: 0 1rem $page-padding-y-lg;
         .presenter{
             .info{
-                padding-left: 10%;
                 .name_link_oc{
                     margin-left: 2%;
                 }
@@ -172,20 +196,6 @@ article.presenter-page {
         }
     }
 }
-@media (min-width: 750px) and (max-width: 991px){
-    main article.presenter-page{
-        .presenter{
-            .info{
-                padding-left: 0em;
-            }
-        }
-    }
-}
-@include media-breakpoint-down(xs) {
-    main article.presenter-page{
-        padding: 0 $page-padding-x $page-padding-y;
-        .info {
-            margin-top: 2em;
-        }
-    }
-}
+
+
+
